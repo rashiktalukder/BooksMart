@@ -7,7 +7,7 @@ namespace BulkyBookWeb.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required(ErrorMessage ="This field is required")]
+        [Required]
         public string Name { get; set; }
         [DisplayName("Display Order")]
         [Range(1,100,ErrorMessage ="Display order must be between 1 to 100 Only!!")]

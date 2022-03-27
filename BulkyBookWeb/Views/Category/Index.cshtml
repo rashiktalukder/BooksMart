@@ -5,6 +5,13 @@
 
 @*<h1>Index Category</h1>*@
 
+@if(TempData["success"] != null)
+{
+    <h2>@TempData["success"]</h2>
+}
+
+@*<partial name="_Notification" />*@
+
 <div class="container p-3">
     <div class="row pt-5">
         <div class="col-6">
